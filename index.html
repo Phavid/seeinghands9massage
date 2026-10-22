@@ -1,201 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seeing Hands 9 Massage By Blind - Kampot</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfaf6;
-            color: #3e2723;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #4e342e;
-            color: #f5f5f5;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 5px solid #d7ccc8;
-        }
-        .logo-img {
-            max-width: 180px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            margin-bottom: 15px;
-            border: 3px solid #ffb74d;
-        }
-        header h1 { margin: 0; font-size: 2.3rem; color: #ffb74d; }
-        header p { margin: 8px 0 0 0; font-size: 1.1rem; font-style: italic; color: #d7ccc8; }
-        .specialty-badge {
-            display: inline-block;
-            background-color: #ffb74d;
-            color: #4e342e;
-            padding: 6px 18px;
-            font-weight: bold;
-            border-radius: 20px;
-            margin-top: 15px;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 25px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        h3 {
-            color: #4e342e;
-            border-bottom: 2px solid #ffe0b2;
-            padding-bottom: 8px;
-            font-size: 1.4rem;
-            margin-top: 30px;
-        }
-        .service-list {
-            list-style: none;
-            padding: 0;
-        }
-        .service-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px dashed #e0e0e0;
-        }
-        .service-name { font-weight: bold; font-size: 1.05rem; }
-        .service-price { color: #e65100; font-weight: bold; font-size: 1.1rem; }
-        .web-link, .facebook-link {
-            color: #0088cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .facebook-link { color: #1877f2; }
-        .web-link:hover, .facebook-link:hover { text-decoration: underline; }
-        .booking-section {
-            text-align: center;
-            margin: 40px 0 20px 0;
-            padding: 25px;
-            background-color: #fff8e1;
-            border-radius: 8px;
-            border: 1px solid #ffe0b2;
-        }
-        .phone-display {
-            font-size: 1.6rem;
-            color: #e65100;
-            font-weight: bold;
-            margin: 5px 0;
-            letter-spacing: 0.5px;
-        }
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-        .btn-booking {
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 1rem;
-            display: inline-block;
-            transition: 0.2s ease;
-        }
-        .btn-booking:hover { transform: translateY(-2px); }
-        .btn-telegram {
-            background-color: #0088cc;
-            box-shadow: 0 4px 10px rgba(0,136,204,0.3);
-        }
-        .btn-telegram:hover { background-color: #006699; }
-        .btn-whatsapp {
-            background-color: #25D366;
-            box-shadow: 0 4px 10px rgba(37,211,102,0.3);
-        }
-        .btn-whatsapp:hover { background-color: #1ebd58; }
-        footer {
-            background-color: #2d1b18;
-            color: #a1887f;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            margin-top: 60px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4e342e">
+  <meta name="description" content="Visit Seeing Hands 9 Massage By Blind in Kampot, Cambodia. Relax with Japanese-inspired massage and acupressure provided by blind and visually impaired practitioners. Contact us to arrange your visit.">
+  <meta property="og:title" content="Seeing Hands 9 Massage By Blind | Kampot, Cambodia">
+  <meta property="og:description" content="A welcoming massage experience in Kampot, provided by blind and visually impaired practitioners.">
+  <meta property="og:type" content="website">
+  <title>Seeing Hands 9 Massage By Blind | Kampot, Cambodia</title>
+
+  <style>
+    :root {
+      --brown: #4e342e;
+      --brown-dark: #33211d;
+      --cream: #fdfaf6;
+      --gold: #ffb74d;
+      --gold-light: #fff3df;
+      --text: #3e2723;
+      --muted: #655650;
+      --line: #eadfd7;
+      --white: #fff;
+      --blue: #087eae;
+      --green: #168b4b;
+      --facebook: #1877f2;
+      --shadow: 0 8px 28px rgba(62, 39, 35, .09);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--blue); }
+    a:focus-visible, .button:focus-visible {
+      outline: 3px solid #1565c0;
+      outline-offset: 4px;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem;
+      background: #fff; color: #000; padding: .75rem 1rem; z-index: 10;
+    }
+    .skip-link:focus { top: 1rem; }
+    .site-header {
+      background: var(--brown);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem 2.5rem;
+      border-bottom: 5px solid #d7ccc8;
+    }
+    .brand-mark {
+      width: 112px; height: 112px; margin: 0 auto 1rem;
+      display: grid; place-items: center;
+      border: 3px solid var(--gold); border-radius: 50%;
+      background: #fff8ec; color: var(--brown);
+      font-weight: 800; font-size: 1.15rem; line-height: 1.2;
+      box-shadow: 0 4px 14px rgba(0,0,0,.2);
+      text-align: center;
+    }
+    /* To use your own logo, replace the brand-mark div with:
+       <img class="logo-img" src="logo.png" alt="Seeing Hands 9 Massage By Blind logo">
+       and upload logo.png to the same GitHub repository folder as index.html. */
+    .site-header h1 {
+      max-width: 900px; margin: 0 auto;
+      color: var(--gold); font-size: clamp(1.8rem, 5vw, 2.8rem);
+      line-height: 1.2;
+    }
+    .tagline { margin: .75rem auto 0; max-width: 720px; color: #f2e7e2; font-size: 1.1rem; }
+    .specialty-badge {
+      display: inline-block; margin-top: 1.2rem; padding: .45rem 1rem;
+      background: var(--gold); color: var(--brown-dark);
+      border-radius: 999px; font-weight: 800; font-size: .88rem;
+      letter-spacing: .04em;
+    }
+    .main-nav {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem 1.2rem;
+      padding: .85rem 1rem; background: #fff; border-bottom: 1px solid var(--line);
+    }
+    .main-nav a { color: var(--brown); font-weight: 700; text-decoration: none; padding: .3rem; }
+    .main-nav a:hover { text-decoration: underline; }
+    main { width: min(100% - 2rem, 900px); margin: 2rem auto 3rem; }
+    .panel {
+      background: var(--white); padding: clamp(1.2rem, 4vw, 2rem);
+      border: 1px solid #f0e7e0; border-radius: 16px; box-shadow: var(--shadow);
+      margin-bottom: 1.4rem;
+    }
+    h2 { color: var(--brown); font-size: clamp(1.4rem, 4vw, 1.8rem); margin: 0 0 .8rem; line-height: 1.3; }
+    h3 { color: var(--brown); margin: 1.5rem 0 .5rem; font-size: 1.15rem; }
+    p { margin: .5rem 0 1rem; }
+    .intro { font-size: 1.06rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: 1rem; }
+    .feature {
+      border: 1px solid var(--line); border-radius: 12px; padding: 1rem;
+      background: #fffdfa;
+    }
+    .feature strong { display: block; color: var(--brown); margin-bottom: .25rem; }
+    .service-list { list-style: none; padding: 0; margin: 0; }
+    .service-item {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+      padding: 1rem 0; border-bottom: 1px dashed var(--line);
+    }
+    .service-item:last-child { border-bottom: 0; }
+    .service-name { font-weight: 750; }
+    .service-note { display: block; color: var(--muted); font-size: .94rem; }
+    .service-price { color: #b84b00; font-weight: 800; white-space: nowrap; }
+    .price-note { color: var(--muted); font-size: .92rem; }
+    .booking-section {
+      text-align: center; background: var(--gold-light); border-color: #f4d8a8;
+    }
+    .phone-display { display: block; font-size: clamp(1.35rem, 4vw, 1.8rem); font-weight: 850; margin: .5rem 0; }
+    .button-row { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1.2rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
+      min-height: 46px; padding: .75rem 1.15rem; border-radius: 999px;
+      color: #fff; font-weight: 750; text-decoration: none; text-align: center;
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .button:hover { transform: translateY(-2px); filter: brightness(.94); }
+    .btn-whatsapp { background: var(--green); }
+    .btn-telegram { background: var(--blue); }
+    .btn-maps { background: var(--brown); }
+    .btn-facebook { background: var(--facebook); }
+    .btn-instagram { background: #a83280; }
+    .btn-tripadvisor { background: #287d46; }
+    .social-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+    .social-grid .button { width: 100%; border-radius: 10px; }
+    .address-box { background: #fffdfa; border-left: 4px solid var(--gold); padding: 1rem; border-radius: 8px; }
+    .small-note { color: var(--muted); font-size: .92rem; }
+    footer { background: var(--brown-dark); color: #f5e9e3; text-align: center; padding: 1.5rem 1rem; }
+    footer a { color: #ffcc80; }
+    @media (max-width: 560px) {
+      .feature-grid, .social-grid { grid-template-columns: 1fr; }
+      .service-item { gap: .5rem; }
+      .button-row .button { width: 100%; }
+      main { width: min(100% - 1rem, 900px); margin-top: 1rem; }
+      .site-header { padding-top: 2.2rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <img src="logo.png" alt="Seeing Hands 9 Logo" class="logo-img">
-        <h1>Seeing Hands 9 Massage By Blind</h1>
-        <p>Relieve your stress and restore your energy in a clean, quiet, and welcoming environment!</p>
-        <span class="specialty-badge">We Specialise in Shiatsu & Anma Massage</span>
-    </header>
+  <header class="site-header">
+    <div class="brand-mark" aria-label="Seeing Hands 9 logo placeholder">SEEING<br>HANDS<br>9</div>
+    <h1>Seeing Hands 9 Massage By Blind</h1>
+    <p class="tagline">Relax, refresh, and feel cared for in Kampot, Cambodia.</p>
+    <span class="specialty-badge">Massage by Blind &amp; Visually Impaired Practitioners</span>
+  </header>
 
-    <div class="container">
-        <h3>About Us</h3>
-        <p>Welcome to <strong>Seeing Hands 9</strong> in Kampot! We offer high-quality professional therapeutic massage services delivered by highly-trained and experienced visually impaired therapists. Our clinic specializes in the Japanese arts of <strong>Shiatsu & Anma</strong>. By supporting us, you help create dignified employment and financial independence for blind individuals within the community.</p>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Contact &amp; Booking</a>
+    <a href="#location">Find Us</a>
+    <a href="#links">Our Links</a>
+  </nav>
 
-        <h3>Professional Services & Prices</h3>
-        <ul class="service-list">
-            <li class="service-item">
-                <span class="service-name">💆‍♂️ Traditional Khmer Massage (1 Hour)</span>
-                <span class="service-price">$7.50</span>
-            </li>
-            <li class="service-item">
-                <span class="service-name">🇯🇵 Shiatsu & Anma Massage (1 Hour)</span>
-                <span class="service-price">$7.50</span>
-            </li>
-            <li class="service-item">
-                <span class="service-name">🛢️ Relaxation & Oil Massage (1 Hour)</span>
-                <span class="service-price">$7.50</span>
-            </li>
-            <li class="service-item">
-                <span class="service-name">🦶 Foot Massage (1 Hour)</span>
-                <span class="service-price">$10.00</span>
-            </li>
-        </ul>
-
-        <h3>Location & Contact</h3>
-        <p>📍 <strong>Address:</strong> Street 722, Kampong Kandal, Kampot Town, Kampot Province, Cambodia.</p>
-        <p>🗺️ <strong>Google Maps:</strong> 
-            <a href="https://goo.gl" target="_blank" class="web-link">
-                Click here to open navigation on Google Maps
-            </a>
-        </p>
-        <p>⏰ <strong>Opening Hours:</strong> 6:00 AM - 11:00 PM (Every day)</p>
-
-        <h3>Follow Our Community</h3>
-        <p>👥 <strong>Facebook Page:</strong> 
-            <a href="https://www.facebook.com/seeinghands9" target="_blank" class="facebook-link">
-                Like & Follow us on Facebook
-            </a>
-        </p>
-
-        <div class="booking-section">
-            <p style="margin: 0; font-weight: bold; font-size: 1.1rem;">Book an Appointment:</p>
-            <div class="phone-display">📞 060 99 12 99</div>
-            <div class="phone-display">📞 086 99 12 99</div>
-            <p style="margin: 10px 0 10px 0; color: #7d6b5d; font-size: 0.9rem;">Click below to instantly chat with us for reservations:</p>
-            
-            <div class="btn-group">
-                <a href="https://t.me/Phavid" target="_blank" class="btn-booking btn-telegram">💬 Telegram</a>
-                <a href="https://wa.me/85560991299" target="_blank" class="btn-booking btn-whatsapp">🟢 WhatsApp</a>
-            </div>
+  <main id="main-content">
+    <section class="panel" id="about">
+      <h2>Welcome to Seeing Hands 9</h2>
+      <p class="intro">
+        We offer a welcoming place to relax and recharge in Kampot. Our massage service is provided by
+        blind and visually impaired practitioners, using attentive touch and carefully delivered
+        massage techniques to help guests unwind.
+      </p>
+      <div class="feature-grid">
+        <div class="feature">
+          <strong>Thoughtful, personal care</strong>
+          We aim to make every guest feel welcome, comfortable, and respected.
         </div>
-    </div>
+        <div class="feature">
+          <strong>Japanese-inspired techniques</strong>
+          Ask our team about Shiatsu- and Anma-inspired massage options.
+        </div>
+        <div class="feature">
+          <strong>A calm environment</strong>
+          Take a break from a busy day and enjoy a moment for yourself.
+        </div>
+        <div class="feature">
+          <strong>Locally based in Kampot</strong>
+          Visitors and local residents are welcome.
+        </div>
+      </div>
+      <p class="small-note">Massage is for relaxation and general wellbeing and is not a substitute for medical care.</p>
+    </section>
 
-    <footer>
-        <p>© 2026 Seeing Hands 9 Massage By Blind. All Rights Reserved.</p>
-    </footer>
+    <section class="panel" id="services">
+      <h2>Our Services</h2>
+      <p>Please contact us to confirm the available treatment, duration, and current price before visiting.</p>
+      <ul class="service-list">
+        <li class="service-item">
+          <div><span class="service-name">Body Massage</span><span class="service-note">A relaxing massage for the body.</span></div>
+          <span class="service-price">Ask us</span>
+        </li>
+        <li class="service-item">
+          <div><span class="service-name">Foot Massage</span><span class="service-note">A soothing option for tired feet.</span></div>
+          <span class="service-price">Ask us</span>
+        </li>
+        <li class="service-item">
+          <div><span class="service-name">Head Massage</span><span class="service-note">A calming treatment for your relaxation time.</span></div>
+          <span class="service-price">Ask us</span>
+        </li>
+        <li class="service-item">
+          <div><span class="service-name">Shiatsu &amp; Anma-style Massage</span><span class="service-note">Ask us which technique and session length are available.</span></div>
+          <span class="service-price">Ask us</span>
+        </li>
+      </ul>
+      <p class="price-note">Prices and session lengths may change. Message us for the latest details. If you wish to publish a fixed price (for example, USD $7.50 per hour), update the service prices above only after confirming it is current.</p>
+    </section>
 
+    <section class="panel booking-section" id="booking">
+      <h2>Contact Us &amp; Arrange Your Visit</h2>
+      <p>For questions, current prices, opening hours, or advance booking, contact us directly.</p>
+      <a class="phone-display" href="tel:+85560991299" aria-label="Call Seeing Hands 9 at plus 855 60 991 299">+855 60 991 299</a>
+      <div class="button-row">
+        <a class="button btn-whatsapp" href="https://wa.me/85560991299" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+        <a class="button btn-telegram" href="https://t.me/Phavid" target="_blank" rel="noopener noreferrer">Message on Telegram</a>
+      </div>
+    </section>
+
+    <section class="panel" id="location">
+      <h2>Find Our Massage Shop</h2>
+      <div class="address-box">
+        <strong>Seeing Hands 9 Massage By Blind</strong><br>
+        Street 722, Village 1 Usaphea, Sangkat Kampong Kandal,<br>
+        Kampot City, Kampot Province, Cambodia.<br>
+        <span class="small-note">Near Phnom Khiev Restaurant and Melav Porridge House. Please use the map link for directions.</span>
+      </div>
+      <div class="button-row">
+        <a class="button btn-maps" href="https://www.google.com/maps/search/?api=1&query=Seeing%20Hands%209%20Massage%20By%20Blind%2C%20Street%20722%2C%20Kampot%2C%20Cambodia" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+      </div>
+    </section>
+
+    <section class="panel" id="links">
+      <h2>Connect With Us</h2>
+      <p>Follow our updates, see our business information, or share your experience using the links below.</p>
+      <div class="social-grid">
+        <a class="button btn-facebook" href="https://www.facebook.com/seeinghands9" target="_blank" rel="noopener noreferrer">Facebook Page</a>
+        <a class="button btn-instagram" href="https://www.instagram.com/_seeinghands9/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="button btn-tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g608455-d33144770-Reviews-Seeing_Hands_9_Massage_By_Blind-Kampot_Kampot_Province.html" target="_blank" rel="noopener noreferrer">Tripadvisor Listing</a>
+        <a class="button btn-telegram" href="https://t.me/Phavid" target="_blank" rel="noopener noreferrer">Telegram Contact</a>
+        <a class="button btn-whatsapp" href="https://wa.me/85560991299" target="_blank" rel="noopener noreferrer">WhatsApp Contact</a>
+        <a class="button btn-maps" href="https://www.google.com/maps/search/?api=1&query=Seeing%20Hands%209%20Massage%20By%20Blind%2C%20Street%20722%2C%20Kampot%2C%20Cambodia" target="_blank" rel="noopener noreferrer">Google Maps Listing</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Seeing Hands 9 Massage By Blind</strong></p>
+    <p>Kampot, Cambodia · Massage with care, respect, and a welcoming touch.</p>
+    <p>&copy; <span id="year">2026</span> Seeing Hands 9. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Keep the copyright year current without requiring an external library.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
